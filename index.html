@@ -61,6 +61,9 @@
       .role { margin-bottom: 22px; color: var(--text); font-size: clamp(1rem, 2vw, 1.3rem); font-weight: 600; }
       .hero-copy { max-width: 600px; color: var(--muted); font-size: 1.12rem; }
       .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+      .highlights { display: flex; flex-wrap: wrap; gap: 14px 28px; margin-top: 38px; }
+      .highlights p { display: flex; align-items: baseline; gap: 8px; margin: 0; color: var(--muted); font-size: .88rem; }
+      .highlights strong { color: var(--text); font-size: 1.6rem; line-height: 1; }
       .button { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 10px 18px; border: 1px solid var(--line); border-radius: 8px; font-size: .9rem; font-weight: 700; text-decoration: none; transition: transform .2s, border-color .2s, background .2s; }
       .button:hover { transform: translateY(-2px); border-color: var(--accent); }
       .button-primary { border-color: var(--accent); background: var(--accent); color: #071711; }
@@ -100,6 +103,7 @@
       .contact { display: flex; align-items: end; justify-content: space-between; gap: 36px; padding-block: 100px 110px; }
       .contact h2 { max-width: 700px; margin-bottom: 22px; }
       .contact p { max-width: 550px; margin-bottom: 0; color: var(--muted); }
+      .contact-email { display: inline-block; margin-top: 14px; color: var(--accent); overflow-wrap: anywhere; }
       .site-footer { padding-block: 25px; border-top: 1px solid #ffffff14; color: var(--muted); font-size: .8rem; }
       .footer-inner { display: flex; justify-content: space-between; gap: 20px; }
       .site-footer a { color: var(--accent); text-decoration: none; }
@@ -152,6 +156,10 @@
           <div class="actions">
             <a class="button button-primary" href="#projetos">Explorar projetos ↗</a>
             <a class="button" href="https://github.com/victorzanin" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+          <div class="highlights" aria-label="Experiência profissional">
+            <p><strong>7+</strong> anos de experiência</p>
+            <p><strong>20+</strong> projetos na carreira</p>
           </div>
         </div>
         <div class="system-visual" aria-hidden="true">
@@ -255,9 +263,9 @@
           <div>
             <p class="eyebrow">Vamos construir algo útil</p>
             <h2>Boas conversas começam com problemas interessantes.</h2>
-            <p>Se você quer trocar ideias sobre backend, sistemas distribuídos ou IA aplicada à engenharia, encontre-me no GitHub.</p>
+            <p>Quer conversar sobre backend, sistemas distribuídos ou IA aplicada à engenharia? Escreva para mim.<br /><a class="contact-email" href="mailto:zanin.victoradriano@gmail.com?subject=Contato%20pelo%20portf%C3%B3lio&amp;body=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio%20no%20GitHub.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os.">zanin.victoradriano@gmail.com</a></p>
           </div>
-          <a class="button button-primary" href="https://github.com/victorzanin" target="_blank" rel="noopener noreferrer">Ver perfil no GitHub ↗</a>
+          <a class="button button-primary" href="mailto:zanin.victoradriano@gmail.com?subject=Contato%20pelo%20portf%C3%B3lio&amp;body=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio%20no%20GitHub.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seus%20servi%C3%A7os.">Enviar e-mail ↗</a>
         </div>
       </section>
     </main>
