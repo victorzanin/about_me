@@ -82,8 +82,11 @@
       .about-grid > p { max-width: 680px; margin-bottom: 0; font-size: 1.16rem; }
       .focus-list { display: grid; gap: 10px; align-content: start; }
       .focus-list span { padding: 11px 15px; border-left: 2px solid var(--accent); background: #ffffff08; color: var(--muted); font-size: .9rem; }
-      .chip-list { display: flex; flex-wrap: wrap; gap: 10px; }
-      .chip { padding: 8px 13px; border: 1px solid var(--line); border-radius: 100px; background: #101925a8; color: #d7e4e8; font-size: .88rem; }
+      .tech-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+      .tech-group { padding: 24px; border: 1px solid var(--line); border-radius: 15px; background: #101925c9; }
+      .tech-group h3 { margin-bottom: 18px; color: var(--accent); font-size: 1.08rem; }
+      .chip-list { display: flex; flex-wrap: wrap; gap: 8px; }
+      .chip { padding: 7px 11px; border: 1px solid var(--line); border-radius: 100px; background: #ffffff07; color: #d7e4e8; font-size: .82rem; }
       .projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
       .project { display: flex; flex-direction: column; min-height: 330px; padding: 26px; border: 1px solid var(--line); border-radius: 15px; background: linear-gradient(145deg, #172534d6, #101a26df); transition: transform .2s, border-color .2s; }
       .project:hover { transform: translateY(-4px); border-color: #79e6d275; }
@@ -113,6 +116,7 @@
         .hero { gap: 45px; padding-block: 75px; }
         .system-visual { min-width: 0; min-height: 0; padding: 25px; }
         .about-grid { grid-template-columns: 1fr; gap: 25px; }
+        .tech-grid { grid-template-columns: 1fr; }
         section.content-section { padding-block: 70px; }
         .contact { align-items: start; flex-direction: column; padding-block: 80px; }
         .footer-inner { flex-direction: column; gap: 5px; }
@@ -130,7 +134,7 @@
         <a class="brand" href="#inicio" aria-label="Victor Zanin — início"><span class="brand-mark" aria-hidden="true">VZ</span> Victor Zanin</a>
         <nav aria-label="Navegação principal">
           <a href="#sobre">Sobre</a>
-          <a href="#stack">Stack</a>
+          <a href="#stack">Tecnologias</a>
           <a href="#projetos">Projetos</a>
           <a href="#contato">Contato</a>
         </nav>
@@ -175,10 +179,41 @@
 
       <section class="content-section" id="stack">
         <div class="container">
-          <div class="section-heading"><span class="section-index">02 /</span><h2>Stack &amp; prática</h2></div>
-          <p class="section-lead">Tecnologias e temas que aparecem no meu trabalho, da implementação de serviços à investigação do comportamento em produção.</p>
-          <div class="chip-list" aria-label="Tecnologias e áreas de prática">
-            <span class="chip">Java</span><span class="chip">SQL</span><span class="chip">NoSQL</span><span class="chip">Microsserviços</span><span class="chip">API first</span><span class="chip">Identidade e autorização</span><span class="chip">Observabilidade</span><span class="chip">Rastreabilidade</span><span class="chip">IA aplicada</span><span class="chip">RAG</span><span class="chip">MCP</span>
+          <div class="section-heading"><span class="section-index">02 /</span><h2>Tecnologias</h2></div>
+          <p class="section-lead">Ferramentas, plataformas e padrões que fazem parte da minha atuação em engenharia de software.</p>
+          <div class="tech-grid">
+            <article class="tech-group">
+              <h3>Java &amp; Spring</h3>
+              <div class="chip-list"><span class="chip">Java 7, 8, 11, 17, 21, 25</span><span class="chip">Spring Boot 2, 3, 4</span><span class="chip">Spring WebFlux</span><span class="chip">Spring Security</span><span class="chip">Spring Batch</span><span class="chip">Spring Cloud</span><span class="chip">Spring MVC</span><span class="chip">Spring Data</span><span class="chip">Spring AI</span><span class="chip">Spring Session</span></div>
+            </article>
+            <article class="tech-group">
+              <h3>Dados &amp; cache</h3>
+              <div class="chip-list"><span class="chip">SQL Server</span><span class="chip">MySQL</span><span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">DynamoDB</span><span class="chip">Qdrant</span><span class="chip">Redis</span></div>
+            </article>
+            <article class="tech-group">
+              <h3>Mensageria</h3>
+              <div class="chip-list"><span class="chip">Kafka</span><span class="chip">Amazon MQ</span><span class="chip">RabbitMQ</span><span class="chip">SQS</span></div>
+            </article>
+            <article class="tech-group">
+              <h3>Cloud, APIs &amp; identidade</h3>
+              <div class="chip-list"><span class="chip">AWS</span><span class="chip">Azure</span><span class="chip">S3</span><span class="chip">Step Functions</span><span class="chip">Lambda</span><span class="chip">API Gateway</span><span class="chip">Apigee</span><span class="chip">Keycloak</span></div>
+            </article>
+            <article class="tech-group">
+              <h3>Observabilidade</h3>
+              <div class="chip-list"><span class="chip">OpenTelemetry</span><span class="chip">Spring Boot Actuator</span><span class="chip">OpenSearch</span><span class="chip">Kibana</span><span class="chip">CloudWatch</span><span class="chip">Datadog</span><span class="chip">Dynatrace</span><span class="chip">Grafana</span><span class="chip">Jaeger</span></div>
+            </article>
+            <article class="tech-group">
+              <h3>Infraestrutura &amp; CI/CD</h3>
+              <div class="chip-list"><span class="chip">Docker</span><span class="chip">Kubernetes (k8s)</span><span class="chip">k3s</span><span class="chip">Jenkins</span><span class="chip">GitHub Actions</span></div>
+            </article>
+            <article class="tech-group">
+              <h3>Frontend</h3>
+              <div class="chip-list"><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">Angular</span><span class="chip">React</span></div>
+            </article>
+            <article class="tech-group">
+              <h3>Padrões de projeto</h3>
+              <div class="chip-list"><span class="chip">Singleton</span><span class="chip">Factory</span><span class="chip">Builder</span><span class="chip">Adapter</span><span class="chip">Facade</span><span class="chip">Decorator</span><span class="chip">Observer</span><span class="chip">Strategy</span></div>
+            </article>
           </div>
         </div>
       </section>
